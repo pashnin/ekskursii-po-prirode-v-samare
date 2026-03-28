@@ -3,171 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие экскурсии по природе в Самаре</title>
-    <meta name="title" content="Лучшие экскурсии по природе в Самаре">
-    <meta name="description" content="Лучшие экскурсии по природе в Самаре на 2026 год">
-    <meta name="author" content="Никодим Архипов">
-    <meta name="keywords" content="Лучшие экскурсии по природе в Самаре Лучшие экскурсии по природе в Самаре на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="69ce6d239e92e6f2">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ekskursii-po-prirode-v-samare.vercel.app">
-    <meta property="og:title" content="Лучшие экскурсии по природе в Самаре">
-    <meta property="og:description" content="Лучшие экскурсии по природе в Самаре на 2026 год">
-    <meta property="og:image" content="https://ekskursii-po-prirode-v-samare.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие экскурсии по природе в Самаре">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:14:35+00:00">
-    <meta property="article:author" content="Никодим Архипов">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ekskursii-po-prirode-v-samare.vercel.app">
-    <meta name="twitter:title" content="Лучшие экскурсии по природе в Самаре">
-    <meta name="twitter:description" content="Лучшие экскурсии по природе в Самаре на 2026 год">
-    <meta name="twitter:image" content="https://ekskursii-po-prirode-v-samare.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Никодим Архипов">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие экскурсии по природе в Самаре",
-        "description": "Лучшие экскурсии по природе в Самаре на 2026 год",
-        "image": "https://ekskursii-po-prirode-v-samare.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:14:35+00:00",
-        "dateModified": "2026-01-10T21:14:35+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Никодим Архипов",
-            "description": "Эксперт в области культурного туризма и краеведения, обладающий обширным опытом проведения экскурсий по Самаре. Имеет степень магистра в области истории и активно делится знаниями о богатом наследии Поволжья. Автор уникальных авторских маршрутов, которые открывают город с новой стороны и погружают участников в его историю, архитектуру и культуру.",
-            "image": "https://ui-avatars.com/api/?name=Никодим+Архипов&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие экскурсии по природе в Самаре",
-            "url": "https://ekskursii-po-prirode-v-samare.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ekskursii-po-prirode-v-samare.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://ekskursii-po-prirode-v-samare.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 930,
-        "timeRequired": "PT4M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие экскурсии по природе в Самаре</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:14:35+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:14:35+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT4M">Время чтения: 4 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Никодим+Архипов&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Никодим Архипов" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Никодим+Архипов&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Никодим Архипов</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и краеведения, обладающий обширным опытом проведения экскурсий по Самаре. Имеет степень магистра в области истории и активно делится знаниями о богатом наследии Поволжья. Автор уникальных авторских маршрутов, которые открывают город с новой стороны и погружают участников в его историю, архитектуру и культуру.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие экскурсии по природе в Самаре">
-            <meta itemprop="description" content="Лучшие экскурсии по природе в Самаре на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:14:35+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:14:35+00:00">
-            <meta itemprop="timeRequired" content="PT4M">
-            <meta itemprop="wordCount" content="930">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Samara/69843-chto-eshe-posmotret/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Samara-69843">Узнать больше</a></p><p>Экскурсии в Самаре — это возможность погрузиться в богатую историю, архитектуру и культуру одного из крупнейших городов Поволжья. На странице собраны уникальные авторские маршруты, которые подойдут как для первооткрывателей, так и для тех, кто хочет увидеть город с новой стороны. Гиды делятся личными историями, интересными фактами и неожиданными деталями.</p><p>Прогулка по Зелёному театру и парку им. Кирова<br> Эта экскурсия проходит по одной из самых известных зон отдыха Самары — парку имени Кирова, где расположен легендарный Зелёный театр. Вы узнаете о его истории создания, архитектурных особенностях и культурной значимости. Прогулка включает знакомство с природными достопримечательностями парка и его скрытыми уголками.<br> Можно узнать много исторических фактов об одном из символов города<br> Маршрут пролегает по живописным местам<br> Возможность сделать красивые фотографии на фоне театра</p><p><b>Отзывы</b>: Участники отмечают необычайную атмосферу уюта, интересные рассказы гида и вдохновляющую архитектуру Зелёного театра.<br> <b>Цена</b>: 2 000 руб. за группу</p><p>Самара глазами москвича: неочевидные истории<br> Экскурсия проводится гидом из Москвы, который расскажет, чем Самара отличается от других городов, какие места здесь особенные, а что стоит увидеть в первую очередь. В программе — рассказы о современной жизни города, его культурных особенностях и архитектуре. Это взгляд со стороны на родную страну.<br> Нестандартный формат экскурсии<br> Личное восприятие города от человека со стороны<br> Подходит как для туристов, так и для местных жителей</p><p><b>Отзывы</b>: Туристы хвалят свежий взгляд на город, непринуждённую атмосферу и полезные рекомендации по ресторанам и музеям.<br> <b>Цена</b>: 3 500 руб. за группу</p><p>Пешком до Блинной горки: история самарского метро<br> Маршрут начинается у станции метро Гагаринская» и продолжается до Кировской», включая спуск по знаменитой Блинной горке». Вы узнаете, как строилось метро, почему одни станции расположены глубоко под землёй, а другие — ближе к поверхности, и как они связаны с историей города.<br> Интересно даже тем, кто ездит на метро каждый день<br> Необычная подача городской истории<br> Визуальные и исторические детали, на которые обычно не обращаешь внимания</p><p><b>Отзывы</b>: Участники в восторге от подробностей строительства метро и неожиданных историй, связанных с каждой станцией.<br> <b>Цена</b>: 2 500 руб. за группу</p><p>Авторская прогулка по улице Ленинской<br> Ленинская — одна из старейших улиц Самары, на которой сохранились дома XIX века и здания советской эпохи. Экскурсия раскроет вам её историю, архитектурные стили и важные события, происходившие здесь. Вы увидите не только фасады, но и внутренние дворы, скрытые от глаз.<br> Можно увидеть редкие архитектурные элементы<br> Программа рассчитана на любознательных путешественников<br> Много исторических деталей и малоизвестных фактов</p><p><b>Отзывы</b>: Посетители ценят погружение в историю улицы и неожиданные находки в виде старых мозаик и архитектурных шедевров.<br> <b>Цена</b>: 2 500 руб. за группу</p><p>История самарской набережной и центральных районов<br> Экскурсия по набережной Волги и центральным районам Самары рассказывает о том, как менялся город, какие проекты реализовывались в разные годы и как формировался его современный облик. Вы узнаете о главных архитекторах, символах города и важных событиях.<br> Отличная возможность понять, как развивался город<br> Много интересных фактов о современных объектах<br> Прогулка сочетает пеший маршрут и обзорные точки</p><p><b>Отзывы</b>: Гости отмечают информативность гида, красивые виды и удобный темп экскурсии.<br> <b>Цена</b>: 3 000 руб. за группу</p><p>Самарский метрополитен глазами инженера<br> Туристы отправляются в путешествие по станциям метро вместе с человеком, который имеет отношение к инженерной части транспортной системы. Экскурсия раскрывает технические аспекты работы метро, особенности проектирования и эксплуатации.<br> Подходит для тех, кто интересуется техникой и технологиями<br> Рассказывается о сложных этапах строительства<br> Интересно даже тем, кто давно пользуется метро</p><p><b>Отзывы</b>: Участники говорят о высоком уровне подготовки гида и уникальной информации, недоступной в обычных экскурсиях.<br> <b>Цена</b>: 3 500 руб. за группу</p><p>Заброшенные уголки Самары: закрытые территории и легенды<br> Эта экскурсия посвящена малоизвестным и заброшенным местам города. Гид расскажет о том, что происходило в этих зданиях раньше, какие легенды связаны с ними, и почему они оказались заброшены.<br> Можно увидеть то, чего не найдёшь самостоятельно<br> Много исторических и культурных деталей<br> Атмосфера загадочности и приключения</p><p><b>Отзывы</b>: Участники отмечают необычность маршрута, интересные рассказы гида и впечатляющие локации.<br> <b>Цена</b>: 3 000 руб. за группу</p><p>Удивительная Самара: архитектура и городская среда<br> Прогулка по самым ярким архитектурным решениям города, начиная с дореволюционных построек и заканчивая современными проектами. Гид объяснит, как менялась городская среда и какие факторы влияли на развитие Самары.<br> Широкий временной охват от прошлого до настоящего<br> Много примеров удачных и спорных решений<br> Подходит для любителей архитектуры и дизайна</p><p><b>Отзывы</b>: Туристы благодарны за доступное объяснение сложных терминов и интересные сравнения разных эпох.<br> <b>Цена</b>: 3 000 руб. за группу</p><p>Самарский дух: улицы, кафе и атмосфера города<br> Эта экскурсия посвящена не только истории, но и повседневной жизни Самары. Вы пройдётесь по уютным улочкам, узнаете о любимых заведениях местных жителей и поймёте, чем живёт современный город.<br> Можно познакомиться с городом через быт и культуру<br> Есть возможность попробовать местную еду<br> Эмоциональная и атмосферная программа</p><p><b>Отзывы</b>: Участники отмечают уютные места, доброжелательность гида и возможность прочувствовать город.<br> <b>Цена</b>: 3 000 руб. за группу</p><p>Невидимый Спутник: история района с секретным прошлым<br> Экскурсия по району Спутник, который долгое время был закрытым и связан с оборонной промышленностью. Сейчас он открыт для всех, но всё ещё хранит следы своей таинственной истории.<br> Редкий доступ к информации о закрытом районе<br> Интересные факты о советских временах<br> Прогулка по необычным и малоизвестным местам</p><p><b>Отзывы</b>: Посетители говорят о необычности маршрута, профессионализме гида и уникальном опыте погружения в историю.<br> <b>Цена</b>: 3 500 руб. за группу</p><p>Вопросы для закрытия темы Экскурсии в Самаре:<br> Какие экскурсии в Самаре наиболее популярны среди туристов?<br> Какие экскурсии в Самаре подходят для любителей истории и архитектуры?<br> Какие экскурсии в Самаре включают посещение закрытых или заброшенных территорий?<br> Как выбрать экскурсию в Самаре для большой компании или семьи?<br> Какие <b>отзывы</b> оставляют участники об экскурсиях в Самаре?<br> Какие экскурсии в Самаре рассчитаны на короткое время (до 2 часов)?<br> Какие экскурсии в Самаре включают работу с профессиональным гидом-экспертом?<br> Сколько стоит стандартная экскурсия в Самаре в 2025 году?<br> Какие экскурсии в Самаре позволяют увидеть город глазами гостя или иностранца?<br> Какие необычные экскурсии в Самаре можно выбрать для любителей нестандартных маршрутов<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</p>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table border="1" cellspacing="0" cellpadding="5">
-    <thead>
-        <tr>
-            <th>Название экскурсии</th>
-            <th>Описание</th>
-            <th>Отзывы</th>
-            <th>Цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Прогулка по Зелёному театру и парку им. Кирова</td>
-            <td>Исследование парка имени Кирова и Зелёного театра, история создания.</td>
-            <td>Участники отмечают атмосферу уюта и вдохновляющую архитектуру.</td>
-            <td>2 000 руб. за группу</td>
-        </tr>
-        <tr>
-            <td>Самара глазами москвича: неочевидные истории</td>
-            <td>Рассказы о культурных особенностях и архитектуре города от гида из Москвы.</td>
-            <td>Туристы хвалят свежий взгляд и полезные рекомендации.</td>
-            <td>3 500 руб. за группу</td>
-        </tr>
-        <tr>
-            <td>Пешком до Блинной горки: история самарского метро</td>
-            <td>Маршрут от станции метро Гагаринская до Кировской, история метро.</td>
-            <td>Интересная информация о строительстве и исторических фактах.</td>
-            <td>Не указана</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Никодим Архипов. Все права защищены.</p>
+    <div class="s-7721-page-shell">
+        <div class="s-7721-site-topbar" aria-label="Навигация по статье">
+            <div class="s-7721-site-topbar__brand">
+                <span class="s-7721-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-7721-article-layout">
+            <article class="s-7721-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-7721-hero">
+                    <div class="s-7721-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-7721-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-7721-meta-card">
+                            <div class="s-7721-meta-label">Дата публикации</div>
+                            <div class="s-7721-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-7721-meta-card">
+                            <div class="s-7721-meta-label">Время чтения</div>
+                            <div class="s-7721-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-7721-meta-card">
+                            <div class="s-7721-meta-label">Объём текста</div>
+                            <div class="s-7721-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-7721-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-7721-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-7721-author-info">
+                            <div class="s-7721-author-name-row">
+                                <div class="s-7721-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-7721-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-7721-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-7721-article-body">
+                    <div class="s-7721-article-content">
+
+                        <div class="s-7721-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-7721-table-card s-7721-table-section" aria-labelledby="comparison-title">
+                <div class="s-7721-section-head">
+                    <h2 id="s-7721-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-7721-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-7721-footer-card s-7721-article-footer">
+                <div class="s-7721-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
